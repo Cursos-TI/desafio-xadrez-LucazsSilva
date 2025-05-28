@@ -10,6 +10,7 @@ int main() {
     int movimentacaoTorre = 0;
     int movimentacaoBispo = 0;
     int movimentacaoRainha = 0;
+    int movimentacaoCavalo = 1;
 
     // Movimento da Torre cinco casas para a direita.
     printf("====== MOVIMENTACAO TORRE ======\n");
@@ -20,7 +21,7 @@ int main() {
     // Movimento da Bispo cinco casas para a Cima, Direita.
     printf("====== MOVIMENTACAO BISPO ======\n");
     while (movimentacaoBispo < 5){
-        printf("Cima, Direita\n");
+        printf("Cima, direita\n");
         movimentacaoBispo++;
 
     }
@@ -32,6 +33,16 @@ int main() {
         printf("Esquerda\n");
     } while (movimentacaoRainha < 8);
 
+    // Movimento do cavelo.
+    printf("====== MOVIMENTACAO CAVALO ======\n");
+        
+    
+    while (movimentacaoCavalo--){
+        for (int j = 1; j <= 2; j++){
+            printf("Baixo\n");
+        }
+        printf("Esquerda\n");
+    }
 
     return 0;
 }
